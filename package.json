@@ -1,0 +1,52 @@
+{
+  "name": "tailwindcss-theming",
+  "version": "2.3.0",
+  "description": "A TailwindCSS plugin that helps with theming",
+  "main": "dist/index.js",
+  "author": {
+    "email": "enzo@innocenzi.dev",
+    "name": "Enzo Innocenzi",
+    "url": "https://innocenzi.dev"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "yarn run clean && tsc",
+    "watch": "yarn run clean && tsc -w",
+    "test": "jest test",
+    "test:watch": "jest test --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawezo/tailwindcss-theming.git"
+  },
+  "keywords": [
+    "typescript",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hawezo/tailwindcss-theming/issues"
+  },
+  "homepage": "https://github.com/hawezo/tailwindcss-theming#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/faker": "^4.1.6",
+    "@types/jest": "^24.0.18",
+    "@types/lodash": "^4.14.149",
+    "babel-jest": "^24.9.0",
+    "faker": "^4.1.0",
+    "jest": "^24.9.0",
+    "jest-matcher-css": "^1.1.0",
+    "jest-mock-console": "^1.0.0",
+    "postcss": "^7.0.18",
+    "tailwindcss": "canary",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.0"
+  },
+  "dependencies": {
+    "@ctrl/tinycolor": "^2.5.3",
+    "lodash": "^4.17.15"
+  }
+}
