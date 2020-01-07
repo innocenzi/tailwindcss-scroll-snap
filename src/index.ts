@@ -1,1 +1,1 @@
-export { default as ScrollSnap } from './ScrollSnap';
+export { default } from './ScrollSnap';

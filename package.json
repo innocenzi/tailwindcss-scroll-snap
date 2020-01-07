@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-scroll-snap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Tailwind CSS plugin that adds `scroll-snap` utilities.",
   "main": "dist/index.js",
   "author": {
