@@ -1,1 +1,1 @@
-export { default } from './ScrollSnap';
+module.exports = require('./ScrollSnap').default;
