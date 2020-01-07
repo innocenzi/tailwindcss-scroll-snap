@@ -2,35 +2,15 @@
   <a href="#"><img alt="I'm not a designer leave me alone I know this banner suck" src="docs/assets/banner.png"></a>
   <br>
   <div align="center">
-  <a href="https://github.com/hawezo/tailwindcss-theming/releases" target="_blank"><img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/hawezo/tailwindcss-theming?include_prereleases&style=flat-square"></a>
-  <a href="https://npmjs.com/package/tailwindcss-theming" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/tailwindcss-theming?style=flat-square"></a>
-  <a href="https://npmjs.com/package/tailwindcss-theming" target="_blank"><img alt="npm" src="https://img.shields.io/npm/dt/tailwindcss-theming?style=flat-square"></a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/tailwindcss-theming?style=flat-square">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/hawezo/tailwindcss-theming?style=flat-square">
+  <a href="https://github.com/hawezo/tailwindcss-scroll-snap/releases" target="_blank"><img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/hawezo/tailwindcss-scroll-snap?include_prereleases&style=flat-square"></a>
+  <a href="https://npmjs.com/package/tailwindcss-scroll-snap" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/tailwindcss-scroll-snap?style=flat-square"></a>
+  <a href="https://npmjs.com/package/tailwindcss-scroll-snap" target="_blank"><img alt="npm" src="https://img.shields.io/npm/dt/tailwindcss-scroll-snap?style=flat-square"></a>
+  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/tailwindcss-scroll-snap?style=flat-square">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/hawezo/tailwindcss-scroll-snap?style=flat-square">
   </div>
   <br>
 </p>
 
-# Table of contents
-
-- [Introduction](#introduction)
-- [Setup](docs/setup.md)
-- [Usage](docs/usage.md)
-- [Configuration](docs/configuration.md)
-    - [Colors](docs/configuration.md#colors)
-    - [Variants](docs/configuration.md#variants)
-    - [Themes](docs/configuration.md#themes)
-    - [Strategies](docs/configuration.md#strategies)
-- [Extending Tailwind and custom variables](docs/extending.md)
-    - [Adding variables](docs/extending.md#adding-variables)
-    - [Extending Tailwind](docs/extending.md#extending-tailwind)
-- [API reference](docs/reference.md)
-  - [ThemeBuilder](docs/reference.md#theme-builder)
-  - [Theme](docs/reference.md#theme)
-- [Examples](docs/examples.md)
-    - [Configuration](docs/examples.md#configuration)
-    - [Application](docs/examples.md#application)
-- [Compatibility](#compatibility)
 
 
 # Introduction
@@ -47,7 +27,7 @@ Moreover, this plugin fully supports the [`prefers-color-scheme`](https://develo
 **Get started:**
 
 ```console
-$ yarn add tailwindcss-theming --dev
+$ yarn add tailwindcss-scroll-snap --dev
 ```
 
 
