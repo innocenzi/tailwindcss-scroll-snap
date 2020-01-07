@@ -43,10 +43,11 @@
     "postcss": "^7.0.18",
     "tailwindcss": "canary",
     "ts-jest": "^24.1.0",
-    "typescript": "^3.7.0"
+    "typescript": "^3.7.0",
+    "@types/node": "^13.1.4"
   },
   "dependencies": {
-    "@ctrl/tinycolor": "^2.5.3",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "reduce-css-calc": "^2.1.7"
   }
 }

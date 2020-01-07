@@ -681,11 +681,6 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@ctrl/tinycolor@^2.5.3":
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-2.5.3.tgz#65dbb773f3a7e9a37b88ea0a5b68a392f8a447b0"
-  integrity sha512-tu0Xqhz0AI5LoU2yyz4asVAev4hzWt30dutbY6Nu7pKvLX0JP5p6NJ5uomwC/blhLMk88hVgXRODFlTB+c03Nw==
-
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
@@ -908,6 +903,11 @@
   version "4.14.149"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.149.tgz#1342d63d948c6062838fbf961012f74d4e638440"
   integrity sha512-ijGqzZt/b7BfzcK9vTrS6MFljQRPn5BFWOx8oE0GYxribu6uV+aA9zZuXI1zc/etK9E8nrgdoF2+LgUw7+9tJQ==
+
+"@types/node@^13.1.4":
+  version "13.1.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.1.4.tgz#4cfd90175a200ee9b02bd6b1cd19bc349741607e"
+  integrity sha512-Lue/mlp2egZJoHXZr4LndxDAd7i/7SQYhV0EjWfb/a4/OZ6tuVwMCVPiwkU5nsEipxEf7hmkSU7Em5VQ8P5NGA==
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -3626,6 +3626,14 @@ reduce-css-calc@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/reduce-css-calc/-/reduce-css-calc-2.1.6.tgz#050fe6ee7d98a1d70775d2e93ce0b713cee394d2"
   integrity sha512-+l5/qlQmdsbM9h6JerJ/y5vR5Ci0k93aszLNpCmbadC3nBcbRGmIBm0s9Nj59i22LvCjTGftWzdQRwdknayxhw==
+  dependencies:
+    css-unit-converter "^1.1.1"
+    postcss-value-parser "^3.3.0"
+
+reduce-css-calc@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/reduce-css-calc/-/reduce-css-calc-2.1.7.tgz#1ace2e02c286d78abcd01fd92bfe8097ab0602c2"
+  integrity sha512-fDnlZ+AybAS3C7Q9xDq5y8A2z+lT63zLbynew/lur/IR24OQF5x98tfNwf79mzEdfywZ0a2wpM860FhFfMxZlA==
   dependencies:
     css-unit-converter "^1.1.1"
     postcss-value-parser "^3.3.0"

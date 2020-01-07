@@ -1,8 +1,10 @@
 import Type from '../src/ScrollSnapPlugins/Type';
 import Align from '../src/ScrollSnapPlugins/Align';
 import Stop from '../src/ScrollSnapPlugins/Stop';
+import Margin from '../src/ScrollSnapPlugins/Margin';
 import cssMatcher from 'jest-matcher-css';
 import generateCss from './generateCss';
+import fs from 'fs';
 import _ from 'lodash';
 
 expect.extend({
@@ -143,6 +145,68 @@ describe('ScrollSnapStop', () => {
     expect(css).toMatchCss(`
       .normal-snap { scroll-snap-stop: normal }
       .hover\\:normal-snap:hover { scroll-snap-stop: normal }
+    `);
+  });
+});
+
+describe('ScrollMargin', () => {
+  it('generates utilities from default config', async () => {
+    const css = await generateCss(Margin);
+
+    // @ts-ignore
+    expect(css).toMatchCss(fs.readFileSync('test/bench/snap-margins.css').toString());
+  });
+
+  it('generates utilities from custom config', async () => {
+    const css = await generateCss(Margin, {
+      scrollMargin: {
+        'tight': '1rem',
+        'lose': '2rem',
+      },
+    });
+
+    // @ts-ignore
+    expect(css).toMatchCss(`
+      .snap-m-tight { scroll-margin: 1rem }  
+      .snap-m-lose { scroll-margin: 2rem }  
+      .snap-my-tight { scroll-margin-top: 1rem; scroll-margin-bottom: 1rem }  
+      .snap-mx-tight { scroll-margin-left: 1rem; scroll-margin-right: 1rem }  
+      .snap-my-lose { scroll-margin-top: 2rem; scroll-margin-bottom: 2rem }  
+      .snap-mx-lose { scroll-margin-left: 2rem; scroll-margin-right: 2rem }  
+      .snap-mt-tight { scroll-margin-top: 1rem }  
+      .snap-mr-tight { scroll-margin-right: 1rem }  
+      .snap-mb-tight { scroll-margin-bottom: 1rem }  
+      .snap-ml-tight { scroll-margin-left: 1rem }  
+      .snap-mt-lose { scroll-margin-top: 2rem }  
+      .snap-mr-lose { scroll-margin-right: 2rem }  
+      .snap-mb-lose { scroll-margin-bottom: 2rem }  
+      .snap-ml-lose { scroll-margin-left: 2rem }    
+    `);
+  });
+
+  it('generates variants', async () => {
+    const css = await generateCss(Margin, {
+      scrollMargin: {
+        'tight': '1rem',
+      },
+    }, ['hover']);
+
+    // @ts-ignore
+    expect(css).toMatchCss(`
+      .snap-m-tight { scroll-margin: 1rem }
+      .snap-my-tight { scroll-margin-top: 1rem; scroll-margin-bottom: 1rem }
+      .snap-mx-tight { scroll-margin-left: 1rem; scroll-margin-right: 1rem }
+      .snap-mt-tight { scroll-margin-top: 1rem }
+      .snap-mr-tight { scroll-margin-right: 1rem }
+      .snap-mb-tight { scroll-margin-bottom: 1rem }
+      .snap-ml-tight { scroll-margin-left: 1rem }
+      .hover\\:snap-m-tight:hover { scroll-margin: 1rem }
+      .hover\\:snap-my-tight:hover { scroll-margin-top: 1rem; scroll-margin-bottom: 1rem }
+      .hover\\:snap-mx-tight:hover { scroll-margin-left: 1rem; scroll-margin-right: 1rem }
+      .hover\\:snap-mt-tight:hover { scroll-margin-top: 1rem }
+      .hover\\:snap-mr-tight:hover { scroll-margin-right: 1rem }
+      .hover\\:snap-mb-tight:hover { scroll-margin-bottom: 1rem }
+      .hover\\:snap-ml-tight:hover { scroll-margin-left: 1rem }
     `);
   });
 });
