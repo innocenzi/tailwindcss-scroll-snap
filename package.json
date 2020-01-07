@@ -1,7 +1,7 @@
 {
-  "name": "tailwindcss-theming",
-  "version": "2.3.0",
-  "description": "A TailwindCSS plugin that helps with theming",
+  "name": "tailwindcss-scroll-snap",
+  "version": "0.1.0",
+  "description": "A Tailwind CSS plugin that adds `scroll-snap` utilities.",
   "main": "dist/index.js",
   "author": {
     "email": "enzo@innocenzi.dev",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hawezo/tailwindcss-theming.git"
+    "url": "git+https://github.com/hawezo/tailwindcss-scroll-snap.git"
   },
   "keywords": [
     "typescript",
@@ -25,9 +25,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hawezo/tailwindcss-theming/issues"
+    "url": "https://github.com/hawezo/tailwindcss-scroll-snap/issues"
   },
-  "homepage": "https://github.com/hawezo/tailwindcss-theming#readme",
+  "homepage": "https://github.com/hawezo/tailwindcss-scroll-snap#readme",
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
