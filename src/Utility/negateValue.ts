@@ -1,3 +1,4 @@
+// @ts-ignore // FIX ME
 import reduceCalc from 'reduce-css-calc';
 
 export default function(value: any) {
