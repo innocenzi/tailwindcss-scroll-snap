@@ -2,6 +2,7 @@ import Type from '../src/ScrollSnapPlugins/Type';
 import Align from '../src/ScrollSnapPlugins/Align';
 import Stop from '../src/ScrollSnapPlugins/Stop';
 import Margin from '../src/ScrollSnapPlugins/Margin';
+import Padding from '../src/ScrollSnapPlugins/Padding';
 import cssMatcher from 'jest-matcher-css';
 import generateCss from './generateCss';
 import fs from 'fs';
@@ -207,6 +208,69 @@ describe('ScrollMargin', () => {
       .hover\\:snap-mr-tight:hover { scroll-margin-right: 1rem }
       .hover\\:snap-mb-tight:hover { scroll-margin-bottom: 1rem }
       .hover\\:snap-ml-tight:hover { scroll-margin-left: 1rem }
+    `);
+  });
+});
+
+
+describe('ScrollPadding', () => {
+  it('generates utilities from default config', async () => {
+    const css = await generateCss(Padding);
+
+    // @ts-ignore
+    expect(css).toMatchCss(fs.readFileSync('test/bench/snap-paddings.css').toString());
+  });
+
+  it('generates utilities from custom config', async () => {
+    const css = await generateCss(Padding, {
+      scrollPadding: {
+        'tight': '1rem',
+        'lose': '2rem',
+      },
+    });
+
+    // @ts-ignore
+    expect(css).toMatchCss(`
+      .snap-p-tight { scroll-padding: 1rem }  
+      .snap-p-lose { scroll-padding: 2rem }  
+      .snap-py-tight { scroll-padding-top: 1rem; scroll-padding-bottom: 1rem }  
+      .snap-px-tight { scroll-padding-left: 1rem; scroll-padding-right: 1rem }  
+      .snap-py-lose { scroll-padding-top: 2rem; scroll-padding-bottom: 2rem }  
+      .snap-px-lose { scroll-padding-left: 2rem; scroll-padding-right: 2rem }  
+      .snap-pt-tight { scroll-padding-top: 1rem }  
+      .snap-pr-tight { scroll-padding-right: 1rem }  
+      .snap-pb-tight { scroll-padding-bottom: 1rem }  
+      .snap-pl-tight { scroll-padding-left: 1rem }  
+      .snap-pt-lose { scroll-padding-top: 2rem }  
+      .snap-pr-lose { scroll-padding-right: 2rem }  
+      .snap-pb-lose { scroll-padding-bottom: 2rem }  
+      .snap-pl-lose { scroll-padding-left: 2rem }    
+    `);
+  });
+
+  it('generates variants', async () => {
+    const css = await generateCss(Padding, {
+      scrollPadding: {
+        'tight': '1rem',
+      },
+    }, ['hover']);
+
+    // @ts-ignore
+    expect(css).toMatchCss(`
+      .snap-p-tight { scroll-padding: 1rem }
+      .snap-py-tight { scroll-padding-top: 1rem; scroll-padding-bottom: 1rem }
+      .snap-px-tight { scroll-padding-left: 1rem; scroll-padding-right: 1rem }
+      .snap-pt-tight { scroll-padding-top: 1rem }
+      .snap-pr-tight { scroll-padding-right: 1rem }
+      .snap-pb-tight { scroll-padding-bottom: 1rem }
+      .snap-pl-tight { scroll-padding-left: 1rem }
+      .hover\\:snap-p-tight:hover { scroll-padding: 1rem }
+      .hover\\:snap-py-tight:hover { scroll-padding-top: 1rem; scroll-padding-bottom: 1rem }
+      .hover\\:snap-px-tight:hover { scroll-padding-left: 1rem; scroll-padding-right: 1rem }
+      .hover\\:snap-pt-tight:hover { scroll-padding-top: 1rem }
+      .hover\\:snap-pr-tight:hover { scroll-padding-right: 1rem }
+      .hover\\:snap-pb-tight:hover { scroll-padding-bottom: 1rem }
+      .hover\\:snap-pl-tight:hover { scroll-padding-left: 1rem }
     `);
   });
 });
