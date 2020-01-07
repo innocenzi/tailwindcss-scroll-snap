@@ -1,4 +1,5 @@
 import Type from '../src/ScrollSnapPlugins/Type';
+import Align from '../src/ScrollSnapPlugins/Align';
 import cssMatcher from 'jest-matcher-css';
 import generateCss from './generateCss';
 import _ from 'lodash';
@@ -53,6 +54,51 @@ describe('ScrollSnapType', () => {
     expect(css).toMatchCss(`
       .snap-both-mandatory { scroll-snap-type: both mandatory }
       .hover\\:snap-both-mandatory:hover { scroll-snap-type: both mandatory }
+    `);
+  });
+});
+
+
+describe('ScrollSnapAlign', () => {
+  it('generates utilities from default config', async () => {
+    const css = await generateCss(Align);
+
+    // @ts-ignore
+    expect(css).toMatchCss(`
+      .snap-start { scroll-snap-align: start }
+      .snap-end { scroll-snap-align: end }
+      .snap-center { scroll-snap-align: center }
+    `);
+  });
+
+  it('generates utilities from custom config', async () => {
+    const css = await generateCss(Align, {
+      scrollSnapAlign: {
+        'snap-none': 'none',
+      },
+    });
+
+    // @ts-ignore
+    expect(css).toMatchCss(`
+      .snap-none { scroll-snap-align: none }
+    `);
+  });
+
+  it('generates variants', async () => {
+    const css = await generateCss(
+      Align,
+      {
+        scrollSnapAlign: {
+          'snap-none': 'none',
+        },
+      },
+      ['hover']
+    );
+
+    // @ts-ignore
+    expect(css).toMatchCss(`
+      .snap-none { scroll-snap-align: none }
+      .hover\\:snap-none:hover { scroll-snap-align: none }
     `);
   });
 });

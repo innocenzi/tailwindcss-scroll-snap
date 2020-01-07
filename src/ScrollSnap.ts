@@ -1,7 +1,7 @@
 import { TailwindPluginHandler } from "./TailwindPlugin/TailwindPluginHandler";
 import _ from 'lodash';
 import addSnapTypeUtilities from "./ScrollSnapPlugins/Type";
-// import addSnapAlignUtilities from "./ScrollSnapPlugins/Align";
+import addSnapAlignUtilities from "./ScrollSnapPlugins/Align";
 // import addSnapStopUtilities from "./ScrollSnapPlugins/Stop";
 // import addSnapPaddingUtilities from "./ScrollSnapPlugins/Padding";
 // import addSnapMarginUtilities from "./ScrollSnapPlugins/Margin";
@@ -41,7 +41,7 @@ import addSnapTypeUtilities from "./ScrollSnapPlugins/Type";
 export default function(): TailwindPluginHandler {
   return function(helpers): void {
     addSnapTypeUtilities(helpers);
-    // addSnapAlignUtilities(helpers);
+    addSnapAlignUtilities(helpers);
     // addSnapStopUtilities(helpers);
     // addSnapPaddingUtilities(helpers);
     // addSnapMarginUtilities(helpers);
