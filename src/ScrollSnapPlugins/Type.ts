@@ -12,12 +12,12 @@ export default function(helpers: TailwindPluginHelpers) {
   createUtilityPlugin('scrollSnapType', {
     'no-snap': 'none',
     snap: 'var(--scroll-snap-direction) var(--scroll-snap-constraint)',
-    'snap-x': '--scroll-snap-direction: x',
-    'snap-y': '--scroll-snap-direction: y',
-    'snap-both': '--scroll-snap-direction: both',
-    'snap-block': '--scroll-snap-direction: block',
-    'snap-inline': '--scroll-snap-direction: inline',
-    'snap-mandatory': '--scroll-snap-constraint: mandatory',
-    'snap-proximity': '--scroll-snap-constraint: proximity',
+    'snap-x': ['--scroll-snap-direction', 'x'],
+    'snap-y': ['--scroll-snap-direction', 'y'],
+    'snap-both': ['--scroll-snap-direction', 'both'],
+    'snap-block': ['--scroll-snap-direction', 'block'],
+    'snap-inline': ['--scroll-snap-direction', 'inline'],
+    'snap-mandatory': ['--scroll-snap-constraint', 'mandatory'],
+    'snap-proximity': ['--scroll-snap-constraint', 'proximity'],
   }, helpers);
 }

@@ -1,0 +1,1761 @@
+.no-snap {
+  scroll-snap-type: none
+}
+
+.snap {
+  scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint)
+}
+
+.snap-x {
+  --scroll-snap-direction: x
+}
+
+.snap-y {
+  --scroll-snap-direction: y
+}
+
+.snap-both {
+  --scroll-snap-direction: both
+}
+
+.snap-block {
+  --scroll-snap-direction: block
+}
+
+.snap-inline {
+  --scroll-snap-direction: inline
+}
+
+.snap-mandatory {
+  --scroll-snap-constraint: mandatory
+}
+
+.snap-proximity {
+  --scroll-snap-constraint: proximity
+}
+
+.snap-start {
+  scroll-snap-align: start
+}
+
+.snap-end {
+  scroll-snap-align: end
+}
+
+.snap-center {
+  scroll-snap-align: center
+}
+
+.always-stop {
+  scroll-snap-stop: always
+}
+
+.snap-m-0 {
+  scroll-margin: 0
+}
+
+.snap-m-1 {
+  scroll-margin: 0.25rem
+}
+
+.snap-m-2 {
+  scroll-margin: 0.5rem
+}
+
+.snap-m-3 {
+  scroll-margin: 0.75rem
+}
+
+.snap-m-4 {
+  scroll-margin: 1rem
+}
+
+.snap-m-5 {
+  scroll-margin: 1.25rem
+}
+
+.snap-m-6 {
+  scroll-margin: 1.5rem
+}
+
+.snap-m-8 {
+  scroll-margin: 2rem
+}
+
+.snap-m-10 {
+  scroll-margin: 2.5rem
+}
+
+.snap-m-12 {
+  scroll-margin: 3rem
+}
+
+.snap-m-16 {
+  scroll-margin: 4rem
+}
+
+.snap-m-20 {
+  scroll-margin: 5rem
+}
+
+.snap-m-24 {
+  scroll-margin: 6rem
+}
+
+.snap-m-32 {
+  scroll-margin: 8rem
+}
+
+.snap-m-40 {
+  scroll-margin: 10rem
+}
+
+.snap-m-48 {
+  scroll-margin: 12rem
+}
+
+.snap-m-56 {
+  scroll-margin: 14rem
+}
+
+.snap-m-64 {
+  scroll-margin: 16rem
+}
+
+.snap-m-auto {
+  scroll-margin: auto
+}
+
+.snap-m-px {
+  scroll-margin: 1px
+}
+
+.-snap-m-1 {
+  scroll-margin: -0.25rem
+}
+
+.-snap-m-2 {
+  scroll-margin: -0.5rem
+}
+
+.-snap-m-3 {
+  scroll-margin: -0.75rem
+}
+
+.-snap-m-4 {
+  scroll-margin: -1rem
+}
+
+.-snap-m-5 {
+  scroll-margin: -1.25rem
+}
+
+.-snap-m-6 {
+  scroll-margin: -1.5rem
+}
+
+.-snap-m-8 {
+  scroll-margin: -2rem
+}
+
+.-snap-m-10 {
+  scroll-margin: -2.5rem
+}
+
+.-snap-m-12 {
+  scroll-margin: -3rem
+}
+
+.-snap-m-16 {
+  scroll-margin: -4rem
+}
+
+.-snap-m-20 {
+  scroll-margin: -5rem
+}
+
+.-snap-m-24 {
+  scroll-margin: -6rem
+}
+
+.-snap-m-32 {
+  scroll-margin: -8rem
+}
+
+.-snap-m-40 {
+  scroll-margin: -10rem
+}
+
+.-snap-m-48 {
+  scroll-margin: -12rem
+}
+
+.-snap-m-56 {
+  scroll-margin: -14rem
+}
+
+.-snap-m-64 {
+  scroll-margin: -16rem
+}
+
+.-snap-m-px {
+  scroll-margin: -1px
+}
+
+.snap-my-0 {
+  scroll-margin-top: 0;
+  scroll-margin-bottom: 0
+}
+
+.snap-mx-0 {
+  scroll-margin-left: 0;
+  scroll-margin-right: 0
+}
+
+.snap-my-1 {
+  scroll-margin-top: 0.25rem;
+  scroll-margin-bottom: 0.25rem
+}
+
+.snap-mx-1 {
+  scroll-margin-left: 0.25rem;
+  scroll-margin-right: 0.25rem
+}
+
+.snap-my-2 {
+  scroll-margin-top: 0.5rem;
+  scroll-margin-bottom: 0.5rem
+}
+
+.snap-mx-2 {
+  scroll-margin-left: 0.5rem;
+  scroll-margin-right: 0.5rem
+}
+
+.snap-my-3 {
+  scroll-margin-top: 0.75rem;
+  scroll-margin-bottom: 0.75rem
+}
+
+.snap-mx-3 {
+  scroll-margin-left: 0.75rem;
+  scroll-margin-right: 0.75rem
+}
+
+.snap-my-4 {
+  scroll-margin-top: 1rem;
+  scroll-margin-bottom: 1rem
+}
+
+.snap-mx-4 {
+  scroll-margin-left: 1rem;
+  scroll-margin-right: 1rem
+}
+
+.snap-my-5 {
+  scroll-margin-top: 1.25rem;
+  scroll-margin-bottom: 1.25rem
+}
+
+.snap-mx-5 {
+  scroll-margin-left: 1.25rem;
+  scroll-margin-right: 1.25rem
+}
+
+.snap-my-6 {
+  scroll-margin-top: 1.5rem;
+  scroll-margin-bottom: 1.5rem
+}
+
+.snap-mx-6 {
+  scroll-margin-left: 1.5rem;
+  scroll-margin-right: 1.5rem
+}
+
+.snap-my-8 {
+  scroll-margin-top: 2rem;
+  scroll-margin-bottom: 2rem
+}
+
+.snap-mx-8 {
+  scroll-margin-left: 2rem;
+  scroll-margin-right: 2rem
+}
+
+.snap-my-10 {
+  scroll-margin-top: 2.5rem;
+  scroll-margin-bottom: 2.5rem
+}
+
+.snap-mx-10 {
+  scroll-margin-left: 2.5rem;
+  scroll-margin-right: 2.5rem
+}
+
+.snap-my-12 {
+  scroll-margin-top: 3rem;
+  scroll-margin-bottom: 3rem
+}
+
+.snap-mx-12 {
+  scroll-margin-left: 3rem;
+  scroll-margin-right: 3rem
+}
+
+.snap-my-16 {
+  scroll-margin-top: 4rem;
+  scroll-margin-bottom: 4rem
+}
+
+.snap-mx-16 {
+  scroll-margin-left: 4rem;
+  scroll-margin-right: 4rem
+}
+
+.snap-my-20 {
+  scroll-margin-top: 5rem;
+  scroll-margin-bottom: 5rem
+}
+
+.snap-mx-20 {
+  scroll-margin-left: 5rem;
+  scroll-margin-right: 5rem
+}
+
+.snap-my-24 {
+  scroll-margin-top: 6rem;
+  scroll-margin-bottom: 6rem
+}
+
+.snap-mx-24 {
+  scroll-margin-left: 6rem;
+  scroll-margin-right: 6rem
+}
+
+.snap-my-32 {
+  scroll-margin-top: 8rem;
+  scroll-margin-bottom: 8rem
+}
+
+.snap-mx-32 {
+  scroll-margin-left: 8rem;
+  scroll-margin-right: 8rem
+}
+
+.snap-my-40 {
+  scroll-margin-top: 10rem;
+  scroll-margin-bottom: 10rem
+}
+
+.snap-mx-40 {
+  scroll-margin-left: 10rem;
+  scroll-margin-right: 10rem
+}
+
+.snap-my-48 {
+  scroll-margin-top: 12rem;
+  scroll-margin-bottom: 12rem
+}
+
+.snap-mx-48 {
+  scroll-margin-left: 12rem;
+  scroll-margin-right: 12rem
+}
+
+.snap-my-56 {
+  scroll-margin-top: 14rem;
+  scroll-margin-bottom: 14rem
+}
+
+.snap-mx-56 {
+  scroll-margin-left: 14rem;
+  scroll-margin-right: 14rem
+}
+
+.snap-my-64 {
+  scroll-margin-top: 16rem;
+  scroll-margin-bottom: 16rem
+}
+
+.snap-mx-64 {
+  scroll-margin-left: 16rem;
+  scroll-margin-right: 16rem
+}
+
+.snap-my-auto {
+  scroll-margin-top: auto;
+  scroll-margin-bottom: auto
+}
+
+.snap-mx-auto {
+  scroll-margin-left: auto;
+  scroll-margin-right: auto
+}
+
+.snap-my-px {
+  scroll-margin-top: 1px;
+  scroll-margin-bottom: 1px
+}
+
+.snap-mx-px {
+  scroll-margin-left: 1px;
+  scroll-margin-right: 1px
+}
+
+.-snap-my-1 {
+  scroll-margin-top: -0.25rem;
+  scroll-margin-bottom: -0.25rem
+}
+
+.-snap-mx-1 {
+  scroll-margin-left: -0.25rem;
+  scroll-margin-right: -0.25rem
+}
+
+.-snap-my-2 {
+  scroll-margin-top: -0.5rem;
+  scroll-margin-bottom: -0.5rem
+}
+
+.-snap-mx-2 {
+  scroll-margin-left: -0.5rem;
+  scroll-margin-right: -0.5rem
+}
+
+.-snap-my-3 {
+  scroll-margin-top: -0.75rem;
+  scroll-margin-bottom: -0.75rem
+}
+
+.-snap-mx-3 {
+  scroll-margin-left: -0.75rem;
+  scroll-margin-right: -0.75rem
+}
+
+.-snap-my-4 {
+  scroll-margin-top: -1rem;
+  scroll-margin-bottom: -1rem
+}
+
+.-snap-mx-4 {
+  scroll-margin-left: -1rem;
+  scroll-margin-right: -1rem
+}
+
+.-snap-my-5 {
+  scroll-margin-top: -1.25rem;
+  scroll-margin-bottom: -1.25rem
+}
+
+.-snap-mx-5 {
+  scroll-margin-left: -1.25rem;
+  scroll-margin-right: -1.25rem
+}
+
+.-snap-my-6 {
+  scroll-margin-top: -1.5rem;
+  scroll-margin-bottom: -1.5rem
+}
+
+.-snap-mx-6 {
+  scroll-margin-left: -1.5rem;
+  scroll-margin-right: -1.5rem
+}
+
+.-snap-my-8 {
+  scroll-margin-top: -2rem;
+  scroll-margin-bottom: -2rem
+}
+
+.-snap-mx-8 {
+  scroll-margin-left: -2rem;
+  scroll-margin-right: -2rem
+}
+
+.-snap-my-10 {
+  scroll-margin-top: -2.5rem;
+  scroll-margin-bottom: -2.5rem
+}
+
+.-snap-mx-10 {
+  scroll-margin-left: -2.5rem;
+  scroll-margin-right: -2.5rem
+}
+
+.-snap-my-12 {
+  scroll-margin-top: -3rem;
+  scroll-margin-bottom: -3rem
+}
+
+.-snap-mx-12 {
+  scroll-margin-left: -3rem;
+  scroll-margin-right: -3rem
+}
+
+.-snap-my-16 {
+  scroll-margin-top: -4rem;
+  scroll-margin-bottom: -4rem
+}
+
+.-snap-mx-16 {
+  scroll-margin-left: -4rem;
+  scroll-margin-right: -4rem
+}
+
+.-snap-my-20 {
+  scroll-margin-top: -5rem;
+  scroll-margin-bottom: -5rem
+}
+
+.-snap-mx-20 {
+  scroll-margin-left: -5rem;
+  scroll-margin-right: -5rem
+}
+
+.-snap-my-24 {
+  scroll-margin-top: -6rem;
+  scroll-margin-bottom: -6rem
+}
+
+.-snap-mx-24 {
+  scroll-margin-left: -6rem;
+  scroll-margin-right: -6rem
+}
+
+.-snap-my-32 {
+  scroll-margin-top: -8rem;
+  scroll-margin-bottom: -8rem
+}
+
+.-snap-mx-32 {
+  scroll-margin-left: -8rem;
+  scroll-margin-right: -8rem
+}
+
+.-snap-my-40 {
+  scroll-margin-top: -10rem;
+  scroll-margin-bottom: -10rem
+}
+
+.-snap-mx-40 {
+  scroll-margin-left: -10rem;
+  scroll-margin-right: -10rem
+}
+
+.-snap-my-48 {
+  scroll-margin-top: -12rem;
+  scroll-margin-bottom: -12rem
+}
+
+.-snap-mx-48 {
+  scroll-margin-left: -12rem;
+  scroll-margin-right: -12rem
+}
+
+.-snap-my-56 {
+  scroll-margin-top: -14rem;
+  scroll-margin-bottom: -14rem
+}
+
+.-snap-mx-56 {
+  scroll-margin-left: -14rem;
+  scroll-margin-right: -14rem
+}
+
+.-snap-my-64 {
+  scroll-margin-top: -16rem;
+  scroll-margin-bottom: -16rem
+}
+
+.-snap-mx-64 {
+  scroll-margin-left: -16rem;
+  scroll-margin-right: -16rem
+}
+
+.-snap-my-px {
+  scroll-margin-top: -1px;
+  scroll-margin-bottom: -1px
+}
+
+.-snap-mx-px {
+  scroll-margin-left: -1px;
+  scroll-margin-right: -1px
+}
+
+.snap-mt-0 {
+  scroll-margin-top: 0
+}
+
+.snap-mr-0 {
+  scroll-margin-right: 0
+}
+
+.snap-mb-0 {
+  scroll-margin-bottom: 0
+}
+
+.snap-ml-0 {
+  scroll-margin-left: 0
+}
+
+.snap-mt-1 {
+  scroll-margin-top: 0.25rem
+}
+
+.snap-mr-1 {
+  scroll-margin-right: 0.25rem
+}
+
+.snap-mb-1 {
+  scroll-margin-bottom: 0.25rem
+}
+
+.snap-ml-1 {
+  scroll-margin-left: 0.25rem
+}
+
+.snap-mt-2 {
+  scroll-margin-top: 0.5rem
+}
+
+.snap-mr-2 {
+  scroll-margin-right: 0.5rem
+}
+
+.snap-mb-2 {
+  scroll-margin-bottom: 0.5rem
+}
+
+.snap-ml-2 {
+  scroll-margin-left: 0.5rem
+}
+
+.snap-mt-3 {
+  scroll-margin-top: 0.75rem
+}
+
+.snap-mr-3 {
+  scroll-margin-right: 0.75rem
+}
+
+.snap-mb-3 {
+  scroll-margin-bottom: 0.75rem
+}
+
+.snap-ml-3 {
+  scroll-margin-left: 0.75rem
+}
+
+.snap-mt-4 {
+  scroll-margin-top: 1rem
+}
+
+.snap-mr-4 {
+  scroll-margin-right: 1rem
+}
+
+.snap-mb-4 {
+  scroll-margin-bottom: 1rem
+}
+
+.snap-ml-4 {
+  scroll-margin-left: 1rem
+}
+
+.snap-mt-5 {
+  scroll-margin-top: 1.25rem
+}
+
+.snap-mr-5 {
+  scroll-margin-right: 1.25rem
+}
+
+.snap-mb-5 {
+  scroll-margin-bottom: 1.25rem
+}
+
+.snap-ml-5 {
+  scroll-margin-left: 1.25rem
+}
+
+.snap-mt-6 {
+  scroll-margin-top: 1.5rem
+}
+
+.snap-mr-6 {
+  scroll-margin-right: 1.5rem
+}
+
+.snap-mb-6 {
+  scroll-margin-bottom: 1.5rem
+}
+
+.snap-ml-6 {
+  scroll-margin-left: 1.5rem
+}
+
+.snap-mt-8 {
+  scroll-margin-top: 2rem
+}
+
+.snap-mr-8 {
+  scroll-margin-right: 2rem
+}
+
+.snap-mb-8 {
+  scroll-margin-bottom: 2rem
+}
+
+.snap-ml-8 {
+  scroll-margin-left: 2rem
+}
+
+.snap-mt-10 {
+  scroll-margin-top: 2.5rem
+}
+
+.snap-mr-10 {
+  scroll-margin-right: 2.5rem
+}
+
+.snap-mb-10 {
+  scroll-margin-bottom: 2.5rem
+}
+
+.snap-ml-10 {
+  scroll-margin-left: 2.5rem
+}
+
+.snap-mt-12 {
+  scroll-margin-top: 3rem
+}
+
+.snap-mr-12 {
+  scroll-margin-right: 3rem
+}
+
+.snap-mb-12 {
+  scroll-margin-bottom: 3rem
+}
+
+.snap-ml-12 {
+  scroll-margin-left: 3rem
+}
+
+.snap-mt-16 {
+  scroll-margin-top: 4rem
+}
+
+.snap-mr-16 {
+  scroll-margin-right: 4rem
+}
+
+.snap-mb-16 {
+  scroll-margin-bottom: 4rem
+}
+
+.snap-ml-16 {
+  scroll-margin-left: 4rem
+}
+
+.snap-mt-20 {
+  scroll-margin-top: 5rem
+}
+
+.snap-mr-20 {
+  scroll-margin-right: 5rem
+}
+
+.snap-mb-20 {
+  scroll-margin-bottom: 5rem
+}
+
+.snap-ml-20 {
+  scroll-margin-left: 5rem
+}
+
+.snap-mt-24 {
+  scroll-margin-top: 6rem
+}
+
+.snap-mr-24 {
+  scroll-margin-right: 6rem
+}
+
+.snap-mb-24 {
+  scroll-margin-bottom: 6rem
+}
+
+.snap-ml-24 {
+  scroll-margin-left: 6rem
+}
+
+.snap-mt-32 {
+  scroll-margin-top: 8rem
+}
+
+.snap-mr-32 {
+  scroll-margin-right: 8rem
+}
+
+.snap-mb-32 {
+  scroll-margin-bottom: 8rem
+}
+
+.snap-ml-32 {
+  scroll-margin-left: 8rem
+}
+
+.snap-mt-40 {
+  scroll-margin-top: 10rem
+}
+
+.snap-mr-40 {
+  scroll-margin-right: 10rem
+}
+
+.snap-mb-40 {
+  scroll-margin-bottom: 10rem
+}
+
+.snap-ml-40 {
+  scroll-margin-left: 10rem
+}
+
+.snap-mt-48 {
+  scroll-margin-top: 12rem
+}
+
+.snap-mr-48 {
+  scroll-margin-right: 12rem
+}
+
+.snap-mb-48 {
+  scroll-margin-bottom: 12rem
+}
+
+.snap-ml-48 {
+  scroll-margin-left: 12rem
+}
+
+.snap-mt-56 {
+  scroll-margin-top: 14rem
+}
+
+.snap-mr-56 {
+  scroll-margin-right: 14rem
+}
+
+.snap-mb-56 {
+  scroll-margin-bottom: 14rem
+}
+
+.snap-ml-56 {
+  scroll-margin-left: 14rem
+}
+
+.snap-mt-64 {
+  scroll-margin-top: 16rem
+}
+
+.snap-mr-64 {
+  scroll-margin-right: 16rem
+}
+
+.snap-mb-64 {
+  scroll-margin-bottom: 16rem
+}
+
+.snap-ml-64 {
+  scroll-margin-left: 16rem
+}
+
+.snap-mt-auto {
+  scroll-margin-top: auto
+}
+
+.snap-mr-auto {
+  scroll-margin-right: auto
+}
+
+.snap-mb-auto {
+  scroll-margin-bottom: auto
+}
+
+.snap-ml-auto {
+  scroll-margin-left: auto
+}
+
+.snap-mt-px {
+  scroll-margin-top: 1px
+}
+
+.snap-mr-px {
+  scroll-margin-right: 1px
+}
+
+.snap-mb-px {
+  scroll-margin-bottom: 1px
+}
+
+.snap-ml-px {
+  scroll-margin-left: 1px
+}
+
+.-snap-mt-1 {
+  scroll-margin-top: -0.25rem
+}
+
+.-snap-mr-1 {
+  scroll-margin-right: -0.25rem
+}
+
+.-snap-mb-1 {
+  scroll-margin-bottom: -0.25rem
+}
+
+.-snap-ml-1 {
+  scroll-margin-left: -0.25rem
+}
+
+.-snap-mt-2 {
+  scroll-margin-top: -0.5rem
+}
+
+.-snap-mr-2 {
+  scroll-margin-right: -0.5rem
+}
+
+.-snap-mb-2 {
+  scroll-margin-bottom: -0.5rem
+}
+
+.-snap-ml-2 {
+  scroll-margin-left: -0.5rem
+}
+
+.-snap-mt-3 {
+  scroll-margin-top: -0.75rem
+}
+
+.-snap-mr-3 {
+  scroll-margin-right: -0.75rem
+}
+
+.-snap-mb-3 {
+  scroll-margin-bottom: -0.75rem
+}
+
+.-snap-ml-3 {
+  scroll-margin-left: -0.75rem
+}
+
+.-snap-mt-4 {
+  scroll-margin-top: -1rem
+}
+
+.-snap-mr-4 {
+  scroll-margin-right: -1rem
+}
+
+.-snap-mb-4 {
+  scroll-margin-bottom: -1rem
+}
+
+.-snap-ml-4 {
+  scroll-margin-left: -1rem
+}
+
+.-snap-mt-5 {
+  scroll-margin-top: -1.25rem
+}
+
+.-snap-mr-5 {
+  scroll-margin-right: -1.25rem
+}
+
+.-snap-mb-5 {
+  scroll-margin-bottom: -1.25rem
+}
+
+.-snap-ml-5 {
+  scroll-margin-left: -1.25rem
+}
+
+.-snap-mt-6 {
+  scroll-margin-top: -1.5rem
+}
+
+.-snap-mr-6 {
+  scroll-margin-right: -1.5rem
+}
+
+.-snap-mb-6 {
+  scroll-margin-bottom: -1.5rem
+}
+
+.-snap-ml-6 {
+  scroll-margin-left: -1.5rem
+}
+
+.-snap-mt-8 {
+  scroll-margin-top: -2rem
+}
+
+.-snap-mr-8 {
+  scroll-margin-right: -2rem
+}
+
+.-snap-mb-8 {
+  scroll-margin-bottom: -2rem
+}
+
+.-snap-ml-8 {
+  scroll-margin-left: -2rem
+}
+
+.-snap-mt-10 {
+  scroll-margin-top: -2.5rem
+}
+
+.-snap-mr-10 {
+  scroll-margin-right: -2.5rem
+}
+
+.-snap-mb-10 {
+  scroll-margin-bottom: -2.5rem
+}
+
+.-snap-ml-10 {
+  scroll-margin-left: -2.5rem
+}
+
+.-snap-mt-12 {
+  scroll-margin-top: -3rem
+}
+
+.-snap-mr-12 {
+  scroll-margin-right: -3rem
+}
+
+.-snap-mb-12 {
+  scroll-margin-bottom: -3rem
+}
+
+.-snap-ml-12 {
+  scroll-margin-left: -3rem
+}
+
+.-snap-mt-16 {
+  scroll-margin-top: -4rem
+}
+
+.-snap-mr-16 {
+  scroll-margin-right: -4rem
+}
+
+.-snap-mb-16 {
+  scroll-margin-bottom: -4rem
+}
+
+.-snap-ml-16 {
+  scroll-margin-left: -4rem
+}
+
+.-snap-mt-20 {
+  scroll-margin-top: -5rem
+}
+
+.-snap-mr-20 {
+  scroll-margin-right: -5rem
+}
+
+.-snap-mb-20 {
+  scroll-margin-bottom: -5rem
+}
+
+.-snap-ml-20 {
+  scroll-margin-left: -5rem
+}
+
+.-snap-mt-24 {
+  scroll-margin-top: -6rem
+}
+
+.-snap-mr-24 {
+  scroll-margin-right: -6rem
+}
+
+.-snap-mb-24 {
+  scroll-margin-bottom: -6rem
+}
+
+.-snap-ml-24 {
+  scroll-margin-left: -6rem
+}
+
+.-snap-mt-32 {
+  scroll-margin-top: -8rem
+}
+
+.-snap-mr-32 {
+  scroll-margin-right: -8rem
+}
+
+.-snap-mb-32 {
+  scroll-margin-bottom: -8rem
+}
+
+.-snap-ml-32 {
+  scroll-margin-left: -8rem
+}
+
+.-snap-mt-40 {
+  scroll-margin-top: -10rem
+}
+
+.-snap-mr-40 {
+  scroll-margin-right: -10rem
+}
+
+.-snap-mb-40 {
+  scroll-margin-bottom: -10rem
+}
+
+.-snap-ml-40 {
+  scroll-margin-left: -10rem
+}
+
+.-snap-mt-48 {
+  scroll-margin-top: -12rem
+}
+
+.-snap-mr-48 {
+  scroll-margin-right: -12rem
+}
+
+.-snap-mb-48 {
+  scroll-margin-bottom: -12rem
+}
+
+.-snap-ml-48 {
+  scroll-margin-left: -12rem
+}
+
+.-snap-mt-56 {
+  scroll-margin-top: -14rem
+}
+
+.-snap-mr-56 {
+  scroll-margin-right: -14rem
+}
+
+.-snap-mb-56 {
+  scroll-margin-bottom: -14rem
+}
+
+.-snap-ml-56 {
+  scroll-margin-left: -14rem
+}
+
+.-snap-mt-64 {
+  scroll-margin-top: -16rem
+}
+
+.-snap-mr-64 {
+  scroll-margin-right: -16rem
+}
+
+.-snap-mb-64 {
+  scroll-margin-bottom: -16rem
+}
+
+.-snap-ml-64 {
+  scroll-margin-left: -16rem
+}
+
+.-snap-mt-px {
+  scroll-margin-top: -1px
+}
+
+.-snap-mr-px {
+  scroll-margin-right: -1px
+}
+
+.-snap-mb-px {
+  scroll-margin-bottom: -1px
+}
+
+.-snap-ml-px {
+  scroll-margin-left: -1px
+}
+
+.snap-p-0 {
+  scroll-padding: 0
+}
+
+.snap-p-1 {
+  scroll-padding: 0.25rem
+}
+
+.snap-p-2 {
+  scroll-padding: 0.5rem
+}
+
+.snap-p-3 {
+  scroll-padding: 0.75rem
+}
+
+.snap-p-4 {
+  scroll-padding: 1rem
+}
+
+.snap-p-5 {
+  scroll-padding: 1.25rem
+}
+
+.snap-p-6 {
+  scroll-padding: 1.5rem
+}
+
+.snap-p-8 {
+  scroll-padding: 2rem
+}
+
+.snap-p-10 {
+  scroll-padding: 2.5rem
+}
+
+.snap-p-12 {
+  scroll-padding: 3rem
+}
+
+.snap-p-16 {
+  scroll-padding: 4rem
+}
+
+.snap-p-20 {
+  scroll-padding: 5rem
+}
+
+.snap-p-24 {
+  scroll-padding: 6rem
+}
+
+.snap-p-32 {
+  scroll-padding: 8rem
+}
+
+.snap-p-40 {
+  scroll-padding: 10rem
+}
+
+.snap-p-48 {
+  scroll-padding: 12rem
+}
+
+.snap-p-56 {
+  scroll-padding: 14rem
+}
+
+.snap-p-64 {
+  scroll-padding: 16rem
+}
+
+.snap-p-px {
+  scroll-padding: 1px
+}
+
+.snap-py-0 {
+  scroll-padding-top: 0;
+  scroll-padding-bottom: 0
+}
+
+.snap-px-0 {
+  scroll-padding-left: 0;
+  scroll-padding-right: 0
+}
+
+.snap-py-1 {
+  scroll-padding-top: 0.25rem;
+  scroll-padding-bottom: 0.25rem
+}
+
+.snap-px-1 {
+  scroll-padding-left: 0.25rem;
+  scroll-padding-right: 0.25rem
+}
+
+.snap-py-2 {
+  scroll-padding-top: 0.5rem;
+  scroll-padding-bottom: 0.5rem
+}
+
+.snap-px-2 {
+  scroll-padding-left: 0.5rem;
+  scroll-padding-right: 0.5rem
+}
+
+.snap-py-3 {
+  scroll-padding-top: 0.75rem;
+  scroll-padding-bottom: 0.75rem
+}
+
+.snap-px-3 {
+  scroll-padding-left: 0.75rem;
+  scroll-padding-right: 0.75rem
+}
+
+.snap-py-4 {
+  scroll-padding-top: 1rem;
+  scroll-padding-bottom: 1rem
+}
+
+.snap-px-4 {
+  scroll-padding-left: 1rem;
+  scroll-padding-right: 1rem
+}
+
+.snap-py-5 {
+  scroll-padding-top: 1.25rem;
+  scroll-padding-bottom: 1.25rem
+}
+
+.snap-px-5 {
+  scroll-padding-left: 1.25rem;
+  scroll-padding-right: 1.25rem
+}
+
+.snap-py-6 {
+  scroll-padding-top: 1.5rem;
+  scroll-padding-bottom: 1.5rem
+}
+
+.snap-px-6 {
+  scroll-padding-left: 1.5rem;
+  scroll-padding-right: 1.5rem
+}
+
+.snap-py-8 {
+  scroll-padding-top: 2rem;
+  scroll-padding-bottom: 2rem
+}
+
+.snap-px-8 {
+  scroll-padding-left: 2rem;
+  scroll-padding-right: 2rem
+}
+
+.snap-py-10 {
+  scroll-padding-top: 2.5rem;
+  scroll-padding-bottom: 2.5rem
+}
+
+.snap-px-10 {
+  scroll-padding-left: 2.5rem;
+  scroll-padding-right: 2.5rem
+}
+
+.snap-py-12 {
+  scroll-padding-top: 3rem;
+  scroll-padding-bottom: 3rem
+}
+
+.snap-px-12 {
+  scroll-padding-left: 3rem;
+  scroll-padding-right: 3rem
+}
+
+.snap-py-16 {
+  scroll-padding-top: 4rem;
+  scroll-padding-bottom: 4rem
+}
+
+.snap-px-16 {
+  scroll-padding-left: 4rem;
+  scroll-padding-right: 4rem
+}
+
+.snap-py-20 {
+  scroll-padding-top: 5rem;
+  scroll-padding-bottom: 5rem
+}
+
+.snap-px-20 {
+  scroll-padding-left: 5rem;
+  scroll-padding-right: 5rem
+}
+
+.snap-py-24 {
+  scroll-padding-top: 6rem;
+  scroll-padding-bottom: 6rem
+}
+
+.snap-px-24 {
+  scroll-padding-left: 6rem;
+  scroll-padding-right: 6rem
+}
+
+.snap-py-32 {
+  scroll-padding-top: 8rem;
+  scroll-padding-bottom: 8rem
+}
+
+.snap-px-32 {
+  scroll-padding-left: 8rem;
+  scroll-padding-right: 8rem
+}
+
+.snap-py-40 {
+  scroll-padding-top: 10rem;
+  scroll-padding-bottom: 10rem
+}
+
+.snap-px-40 {
+  scroll-padding-left: 10rem;
+  scroll-padding-right: 10rem
+}
+
+.snap-py-48 {
+  scroll-padding-top: 12rem;
+  scroll-padding-bottom: 12rem
+}
+
+.snap-px-48 {
+  scroll-padding-left: 12rem;
+  scroll-padding-right: 12rem
+}
+
+.snap-py-56 {
+  scroll-padding-top: 14rem;
+  scroll-padding-bottom: 14rem
+}
+
+.snap-px-56 {
+  scroll-padding-left: 14rem;
+  scroll-padding-right: 14rem
+}
+
+.snap-py-64 {
+  scroll-padding-top: 16rem;
+  scroll-padding-bottom: 16rem
+}
+
+.snap-px-64 {
+  scroll-padding-left: 16rem;
+  scroll-padding-right: 16rem
+}
+
+.snap-py-px {
+  scroll-padding-top: 1px;
+  scroll-padding-bottom: 1px
+}
+
+.snap-px-px {
+  scroll-padding-left: 1px;
+  scroll-padding-right: 1px
+}
+
+.snap-pt-0 {
+  scroll-padding-top: 0
+}
+
+.snap-pr-0 {
+  scroll-padding-right: 0
+}
+
+.snap-pb-0 {
+  scroll-padding-bottom: 0
+}
+
+.snap-pl-0 {
+  scroll-padding-left: 0
+}
+
+.snap-pt-1 {
+  scroll-padding-top: 0.25rem
+}
+
+.snap-pr-1 {
+  scroll-padding-right: 0.25rem
+}
+
+.snap-pb-1 {
+  scroll-padding-bottom: 0.25rem
+}
+
+.snap-pl-1 {
+  scroll-padding-left: 0.25rem
+}
+
+.snap-pt-2 {
+  scroll-padding-top: 0.5rem
+}
+
+.snap-pr-2 {
+  scroll-padding-right: 0.5rem
+}
+
+.snap-pb-2 {
+  scroll-padding-bottom: 0.5rem
+}
+
+.snap-pl-2 {
+  scroll-padding-left: 0.5rem
+}
+
+.snap-pt-3 {
+  scroll-padding-top: 0.75rem
+}
+
+.snap-pr-3 {
+  scroll-padding-right: 0.75rem
+}
+
+.snap-pb-3 {
+  scroll-padding-bottom: 0.75rem
+}
+
+.snap-pl-3 {
+  scroll-padding-left: 0.75rem
+}
+
+.snap-pt-4 {
+  scroll-padding-top: 1rem
+}
+
+.snap-pr-4 {
+  scroll-padding-right: 1rem
+}
+
+.snap-pb-4 {
+  scroll-padding-bottom: 1rem
+}
+
+.snap-pl-4 {
+  scroll-padding-left: 1rem
+}
+
+.snap-pt-5 {
+  scroll-padding-top: 1.25rem
+}
+
+.snap-pr-5 {
+  scroll-padding-right: 1.25rem
+}
+
+.snap-pb-5 {
+  scroll-padding-bottom: 1.25rem
+}
+
+.snap-pl-5 {
+  scroll-padding-left: 1.25rem
+}
+
+.snap-pt-6 {
+  scroll-padding-top: 1.5rem
+}
+
+.snap-pr-6 {
+  scroll-padding-right: 1.5rem
+}
+
+.snap-pb-6 {
+  scroll-padding-bottom: 1.5rem
+}
+
+.snap-pl-6 {
+  scroll-padding-left: 1.5rem
+}
+
+.snap-pt-8 {
+  scroll-padding-top: 2rem
+}
+
+.snap-pr-8 {
+  scroll-padding-right: 2rem
+}
+
+.snap-pb-8 {
+  scroll-padding-bottom: 2rem
+}
+
+.snap-pl-8 {
+  scroll-padding-left: 2rem
+}
+
+.snap-pt-10 {
+  scroll-padding-top: 2.5rem
+}
+
+.snap-pr-10 {
+  scroll-padding-right: 2.5rem
+}
+
+.snap-pb-10 {
+  scroll-padding-bottom: 2.5rem
+}
+
+.snap-pl-10 {
+  scroll-padding-left: 2.5rem
+}
+
+.snap-pt-12 {
+  scroll-padding-top: 3rem
+}
+
+.snap-pr-12 {
+  scroll-padding-right: 3rem
+}
+
+.snap-pb-12 {
+  scroll-padding-bottom: 3rem
+}
+
+.snap-pl-12 {
+  scroll-padding-left: 3rem
+}
+
+.snap-pt-16 {
+  scroll-padding-top: 4rem
+}
+
+.snap-pr-16 {
+  scroll-padding-right: 4rem
+}
+
+.snap-pb-16 {
+  scroll-padding-bottom: 4rem
+}
+
+.snap-pl-16 {
+  scroll-padding-left: 4rem
+}
+
+.snap-pt-20 {
+  scroll-padding-top: 5rem
+}
+
+.snap-pr-20 {
+  scroll-padding-right: 5rem
+}
+
+.snap-pb-20 {
+  scroll-padding-bottom: 5rem
+}
+
+.snap-pl-20 {
+  scroll-padding-left: 5rem
+}
+
+.snap-pt-24 {
+  scroll-padding-top: 6rem
+}
+
+.snap-pr-24 {
+  scroll-padding-right: 6rem
+}
+
+.snap-pb-24 {
+  scroll-padding-bottom: 6rem
+}
+
+.snap-pl-24 {
+  scroll-padding-left: 6rem
+}
+
+.snap-pt-32 {
+  scroll-padding-top: 8rem
+}
+
+.snap-pr-32 {
+  scroll-padding-right: 8rem
+}
+
+.snap-pb-32 {
+  scroll-padding-bottom: 8rem
+}
+
+.snap-pl-32 {
+  scroll-padding-left: 8rem
+}
+
+.snap-pt-40 {
+  scroll-padding-top: 10rem
+}
+
+.snap-pr-40 {
+  scroll-padding-right: 10rem
+}
+
+.snap-pb-40 {
+  scroll-padding-bottom: 10rem
+}
+
+.snap-pl-40 {
+  scroll-padding-left: 10rem
+}
+
+.snap-pt-48 {
+  scroll-padding-top: 12rem
+}
+
+.snap-pr-48 {
+  scroll-padding-right: 12rem
+}
+
+.snap-pb-48 {
+  scroll-padding-bottom: 12rem
+}
+
+.snap-pl-48 {
+  scroll-padding-left: 12rem
+}
+
+.snap-pt-56 {
+  scroll-padding-top: 14rem
+}
+
+.snap-pr-56 {
+  scroll-padding-right: 14rem
+}
+
+.snap-pb-56 {
+  scroll-padding-bottom: 14rem
+}
+
+.snap-pl-56 {
+  scroll-padding-left: 14rem
+}
+
+.snap-pt-64 {
+  scroll-padding-top: 16rem
+}
+
+.snap-pr-64 {
+  scroll-padding-right: 16rem
+}
+
+.snap-pb-64 {
+  scroll-padding-bottom: 16rem
+}
+
+.snap-pl-64 {
+  scroll-padding-left: 16rem
+}
+
+.snap-pt-px {
+  scroll-padding-top: 1px
+}
+
+.snap-pr-px {
+  scroll-padding-right: 1px
+}
+
+.snap-pb-px {
+  scroll-padding-bottom: 1px
+}
+
+.snap-pl-px {
+  scroll-padding-left: 1px
+} 
