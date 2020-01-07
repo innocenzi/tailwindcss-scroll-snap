@@ -1,5 +1,6 @@
 import Type from '../src/ScrollSnapPlugins/Type';
 import Align from '../src/ScrollSnapPlugins/Align';
+import Stop from '../src/ScrollSnapPlugins/Stop';
 import cssMatcher from 'jest-matcher-css';
 import generateCss from './generateCss';
 import _ from 'lodash';
@@ -99,6 +100,49 @@ describe('ScrollSnapAlign', () => {
     expect(css).toMatchCss(`
       .snap-none { scroll-snap-align: none }
       .hover\\:snap-none:hover { scroll-snap-align: none }
+    `);
+  });
+});
+
+
+describe('ScrollSnapStop', () => {
+  it('generates utilities from default config', async () => {
+    const css = await generateCss(Stop);
+
+    // @ts-ignore
+    expect(css).toMatchCss(`
+      .always-stop { scroll-snap-stop: always }
+    `);
+  });
+
+  it('generates utilities from custom config', async () => {
+    const css = await generateCss(Stop, {
+      scrollSnapStop: {
+        'normal-snap': 'normal',
+      },
+    });
+
+    // @ts-ignore
+    expect(css).toMatchCss(`
+      .normal-snap { scroll-snap-stop: normal }
+    `);
+  });
+
+  it('generates variants', async () => {
+    const css = await generateCss(
+      Stop,
+      {
+        scrollSnapStop: {
+          'normal-snap': 'normal',
+        },
+      },
+      ['hover']
+    );
+
+    // @ts-ignore
+    expect(css).toMatchCss(`
+      .normal-snap { scroll-snap-stop: normal }
+      .hover\\:normal-snap:hover { scroll-snap-stop: normal }
     `);
   });
 });
