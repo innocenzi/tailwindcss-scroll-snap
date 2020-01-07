@@ -1,6 +1,13 @@
 import { TailwindPluginHelpers } from '../TailwindPlugin/TailwindPluginHelpers';
 import createUtilityPlugin from '../Plugins/UtilityPlugin';
 
+/**
+ * Adds utilities for the `scroll-snap-type` property.
+ * 
+ * @see https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type
+ * @export
+ * @param {TailwindPluginHelpers} helpers
+ */
 export default function(helpers: TailwindPluginHelpers) {
   createUtilityPlugin('scrollSnapType', {
     'no-snap': 'none',
