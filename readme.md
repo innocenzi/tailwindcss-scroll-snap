@@ -8,7 +8,7 @@
 
 # Introduction
 
-> **Note** - This plugin works only with [**Tailwind CSS Canary (or v1.2)**](https://github.com/tailwindcss/tailwindcss/tree/v1.2.0-canary.2). You can install `tailwindcss@canary` with NPM.
+> **Note** - This plugin works only with [**Tailwind CSS v1.2**](https://github.com/tailwindcss/tailwindcss/tree/v1.2.0) and above.
 
 `tailwindcss-scroll-snap` adds [CSS Scroll Snap](https://css-tricks.com/practical-css-scroll-snapping/) utilities to Tailwind CSS.
 
