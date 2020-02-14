@@ -23,11 +23,13 @@ $ yarn add tailwindcss-scroll-snap --dev
 After installing the NPM package, add it to the plugins part of `tailwind.config.js`.
 
 ```js
-  variants: {},
+module.exports = {
   theme: {},
+  variants: {},
   plugins: [
     require('tailwindcss-scroll-snap')
   ]
+}
 ```
 
 # Usage
