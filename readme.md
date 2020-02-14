@@ -20,6 +20,18 @@ It makes use of [CSS custom properties](https://developer.mozilla.org/en-US/docs
 $ yarn add tailwindcss-scroll-snap --dev
 ```
 
+After installing the NPM package, add it to the plugins part of `tailwind.config.js`.
+
+```js
+module.exports = {
+  theme: {},
+  variants: {},
+  plugins: [
+    require('tailwindcss-scroll-snap')
+  ]
+}
+```
+
 # Usage
 
 This plugin creates utilities for [`scroll-snap-align`](#align), [`scroll-snap-type`](#Type), [`scroll-snap-stop`](#Stop), [`scroll-margin`](#margin) and [`scroll-padding`](#Padding).
