@@ -25,7 +25,10 @@ After installing the NPM package, add it to the plugins part of `tailwind.config
 ```js
 module.exports = {
   theme: {},
-  variants: {},
+  variants: {
+    // Add variants as needed
+    scrollSnapType: ['responsive'],
+  },
   plugins: [
     require('tailwindcss-scroll-snap')
   ]
@@ -34,7 +37,7 @@ module.exports = {
 
 # Usage
 
-This plugin creates utilities for [`scroll-snap-align`](#align), [`scroll-snap-type`](#Type), [`scroll-snap-stop`](#Stop), [`scroll-margin`](#margin) and [`scroll-padding`](#Padding).
+This plugin creates utilities for [`scroll-snap-align`](#align), [`scroll-snap-type`](#Type), [`scroll-snap-stop`](#Stop), [`scroll-margin`](#margin) and [`scroll-padding`](#Padding). Each of them are variants, [so you can add them in your Tailwind config](https://tailwindcss.com/docs/configuration/#variants).
 
 ## Align
 
