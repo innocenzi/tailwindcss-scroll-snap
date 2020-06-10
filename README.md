@@ -42,7 +42,7 @@ module.exports = {
 
 # Usage
 
-This plugin creates utilities for [`scroll-snap-align`](#align), [`scroll-snap-type`](#Type), [`scroll-snap-stop`](#Stop), [`scroll-margin`](#margin) and [`scroll-padding`](#Padding). Each of them are variants, [so you can add them in your Tailwind config](https://tailwindcss.com/docs/configuration/#variants).
+This plugin creates utilities for [`scroll-snap-align`](#align), [`scroll-snap-type`](#Type), [`scroll-snap-stop`](#Stop), [`scroll-margin`](#margin) and [`scroll-padding`](#Padding). Each of them [can be used with variants](https://tailwindcss.com/docs/configuration/#variants).
 
 ## Align
 
