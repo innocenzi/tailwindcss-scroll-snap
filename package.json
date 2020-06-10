@@ -13,7 +13,8 @@
 		"build": "yarn run clean && tsc",
 		"watch": "yarn run clean && tsc -w",
 		"test": "jest test",
-		"test:watch": "jest test --watch"
+		"test:watch": "jest test --watch",
+		"release": "yarn build && standard-version"
 	},
 	"repository": {
 		"type": "git",
@@ -40,6 +41,7 @@
 		"jest-matcher-css": "^1.1.0",
 		"jest-mock-console": "^1.0.0",
 		"postcss": "^7.0.18",
+		"standard-version": "^8.0.0",
 		"tailwindcss": "v1.2.0-canary.2",
 		"ts-jest": "^24.1.0",
 		"typescript": "^3.7.0"
