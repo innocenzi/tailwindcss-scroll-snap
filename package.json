@@ -21,7 +21,8 @@
 	},
 	"keywords": [
 		"tailwindcss",
-		"scroll-snap"
+		"scroll-snap",
+		"smooth-scroll"
 	],
 	"license": "MIT",
 	"bugs": {
@@ -29,9 +30,6 @@
 	},
 	"homepage": "https://github.com/innocenzi/tailwindcss-scroll-snap#readme",
 	"devDependencies": {
-		"@babel/core": "^7.6.2",
-		"@babel/preset-env": "^7.6.2",
-		"@babel/preset-typescript": "^7.6.0",
 		"@types/faker": "^4.1.6",
 		"@types/jest": "^24.0.18",
 		"@types/lodash": "^4.14.149",
