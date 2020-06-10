@@ -1,14 +1,21 @@
 <p align="center">
-  <a href="https://github.com/innocenzi/tailwindcss-scroll-snap/releases" target="_blank"><img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/innocenzi/tailwindcss-scroll-snap?include_prereleases&style=flat-square"></a>
-  <a href="https://npmjs.com/package/tailwindcss-scroll-snap" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/tailwindcss-scroll-snap?style=flat-square"></a>
-  <a href="https://npmjs.com/package/tailwindcss-scroll-snap" target="_blank"><img alt="npm" src="https://img.shields.io/npm/dt/tailwindcss-scroll-snap?style=flat-square"></a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/tailwindcss-scroll-snap?style=flat-square">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/innocenzi/tailwindcss-scroll-snap?style=flat-square">
+  <h1 align="center">Scroll Snap</h1>
+  <p align="center">
+    <a href="https://github.com/innocenzi/tailwindcss-scroll-snap/releases">
+      <img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/innocenzi/tailwindcss-scroll-snap?include_prereleases&style=flat-square">
+    </a>
+    &nbsp;
+    <a href="https://npmjs.com/package/tailwindcss-scroll-snap">
+      <img alt="npm" src="https://img.shields.io/npm/v/tailwindcss-scroll-snap?style=flat-square">
+    </a>
+    &nbsp;
+    <a href="https://npmjs.com/package/tailwindcss-scroll-snap">
+      <img alt="npm" src="https://img.shields.io/npm/dt/tailwindcss-scroll-snap?style=flat-square&color=blue">
+    </a>
+  </p>
 </p>
 
 # Introduction
-
-> **Note** - This plugin works only with [**Tailwind CSS v1.2**](https://github.com/tailwindcss/tailwindcss/tree/v1.2.0) and above.
 
 `tailwindcss-scroll-snap` adds [CSS Scroll Snap](https://css-tricks.com/practical-css-scroll-snapping/) utilities to Tailwind CSS.
 
