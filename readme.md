@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="https://github.com/hawezo/tailwindcss-scroll-snap/releases" target="_blank"><img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/hawezo/tailwindcss-scroll-snap?include_prereleases&style=flat-square"></a>
+  <a href="https://github.com/innocenzi/tailwindcss-scroll-snap/releases" target="_blank"><img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/innocenzi/tailwindcss-scroll-snap?include_prereleases&style=flat-square"></a>
   <a href="https://npmjs.com/package/tailwindcss-scroll-snap" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/tailwindcss-scroll-snap?style=flat-square"></a>
   <a href="https://npmjs.com/package/tailwindcss-scroll-snap" target="_blank"><img alt="npm" src="https://img.shields.io/npm/dt/tailwindcss-scroll-snap?style=flat-square"></a>
   <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/tailwindcss-scroll-snap?style=flat-square">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/hawezo/tailwindcss-scroll-snap?style=flat-square">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/innocenzi/tailwindcss-scroll-snap?style=flat-square">
 </p>
 
 # Introduction
@@ -24,15 +24,13 @@ After installing the NPM package, add it to the plugins part of `tailwind.config
 
 ```js
 module.exports = {
-  theme: {},
-  variants: {
-    // Add variants as needed
-    scrollSnapType: ['responsive'],
-  },
-  plugins: [
-    require('tailwindcss-scroll-snap')
-  ]
-}
+	theme: {},
+	variants: {
+		// Add variants as needed
+		scrollSnapType: ['responsive'],
+	},
+	plugins: [require('tailwindcss-scroll-snap')],
+};
 ```
 
 # Usage
@@ -71,11 +69,11 @@ These utilities work with composition. Except `.no-snap`, you need to combine th
 
 ```html
 <section class="snap snap-y snap-mandatory">
-  <!-- ... -->
+	<!-- ... -->
 </section>
-``` 
+```
 
-A configuration for variable-less `scroll-snap-type` utilities could look like that: 
+A configuration for variable-less `scroll-snap-type` utilities could look like that:
 
 ```js
 {
@@ -83,7 +81,7 @@ A configuration for variable-less `scroll-snap-type` utilities could look like t
     'snap-y-mandatory': 'y mandatory',
     'snap-y-proximity': 'y proximity',
 }
-``` 
+```
 
 It is recommanded that in the case where you need to override the configuration, you only add utilities you plan on actually using.
 
