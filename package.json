@@ -14,7 +14,7 @@
 		"watch": "yarn run clean && tsc -w",
 		"test": "jest test",
 		"test:watch": "jest test --watch",
-		"release": "yarn build && standard-version"
+		"release": "yarn build && standard-version --skip.changelog"
 	},
 	"repository": {
 		"type": "git",
