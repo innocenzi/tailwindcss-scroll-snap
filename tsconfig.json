@@ -1,15 +1,14 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es6",
-    "declaration": true,
-    "strict": true,
-    "outDir": "dist",
-    "moduleResolution": "node",
-    "lib": ["es2017", "es6", "dom"],
-    "resolveJsonModule": true,
-    "esModuleInterop": true
-  },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es6",
+		"declaration": true,
+		"outDir": "dist",
+		"moduleResolution": "node",
+		"lib": ["es2017"],
+		"resolveJsonModule": true,
+		"esModuleInterop": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
 }

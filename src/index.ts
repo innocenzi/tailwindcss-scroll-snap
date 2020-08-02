@@ -1,1 +1,1 @@
-module.exports = require('./ScrollSnap').default;
+module.exports = require('./plugin').default;

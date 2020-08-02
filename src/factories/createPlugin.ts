@@ -1,4 +1,3 @@
-import { TailwindPluginHelpers } from '../TailwindPlugin/TailwindPluginHelpers';
 import _ from 'lodash';
 
 /**
@@ -11,13 +10,22 @@ import _ from 'lodash';
  *                   and the second value the property value.
  * @param {TailwindPluginHelpers} helpers The Tailwind plugin helpers object.
  */
-export default function(property: string, config: any, { e, theme, variants, addUtilities }: TailwindPluginHelpers) {
-  addUtilities(
-    _.map(theme(property, config), (value: string | [string, string], name: string) => ({
-      [`.${e(name)}`]: { [getPropertyName(property, value)]: getValue(value) },
-    })),
-    variants(property, [])
-  );
+export default function (
+	property: string,
+	config: any,
+	{ e, theme, variants, addUtilities }: any,
+) {
+	addUtilities(
+		_.map(
+			theme(property, config),
+			(value: string | [string, string], name: string) => ({
+				[`.${e(name)}`]: {
+					[getPropertyName(property, value)]: getValue(value),
+				},
+			}),
+		),
+		variants(property, []),
+	);
 }
 
 /**
@@ -28,7 +36,7 @@ export default function(property: string, config: any, { e, theme, variants, add
  * @returns
  */
 function getPropertyName(property: string, value: string | [string, string]) {
-  return Array.isArray(value) ? value[0] : property;
+	return Array.isArray(value) ? value[0] : property;
 }
 
 /**
@@ -39,5 +47,5 @@ function getPropertyName(property: string, value: string | [string, string]) {
  * @returns
  */
 function getValue(value: string | [string, string]) {
-  return Array.isArray(value) ? value[1] : value;
+	return Array.isArray(value) ? value[1] : value;
 }
