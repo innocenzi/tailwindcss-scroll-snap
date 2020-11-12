@@ -19,7 +19,7 @@
 
 `tailwindcss-scroll-snap` adds [CSS Scroll Snap](https://css-tricks.com/practical-css-scroll-snapping/) utilities to Tailwind CSS.
 
-It makes use of [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) by default in order to make composable utilities for [Scroll Snap Types](https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type), but you can override the `scrollSnapType` key in your Tailwind config if you don't want to use CSS custom properties.
+It makes use of [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) by default in order to make composable utilities for [Scroll Snap Types](https://developer.mozilla.org/docs/Web/CSS/scroll-snap-type), but you can override the `scrollSnapType` key in your Tailwind config if you don't want to use CSS custom properties.
 
 **Get started:**
 
@@ -46,7 +46,7 @@ This plugin creates utilities for [`scroll-snap-align`](#align), [`scroll-snap-t
 
 ## Align
 
-Utilities for the [`scroll-snap-align`](https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-align) property.
+Utilities for the [`scroll-snap-align`](https://developer.mozilla.org/docs/Web/CSS/scroll-snap-align) property.
 
 | Class          | Property                     |
 | -------------- | ---------------------------- |
@@ -58,7 +58,7 @@ You can override `scrollSnapAlign` in the theme of the Tailwind configuration if
 
 ## Type
 
-Utilities for the [`scroll-snap-type`](https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type) property.
+Utilities for the [`scroll-snap-type`](https://developer.mozilla.org/docs/Web/CSS/scroll-snap-type) property.
 
 | Class             | Property                                                                        |
 | ----------------- | ------------------------------------------------------------------------------- |
@@ -90,11 +90,11 @@ A configuration for variable-less `scroll-snap-type` utilities could look like t
 }
 ```
 
-It is recommanded that in the case where you need to override the configuration, you only add utilities you plan on actually using.
+It is recommended that in the case where you need to override the configuration, you only add utilities you plan on actually using.
 
 ## Stop
 
-Utilities for the [`scroll-snap-stop`](https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-stop) property.
+Utilities for the [`scroll-snap-stop`](https://developer.mozilla.org/docs/Web/CSS/scroll-snap-stop) property.
 
 | Class          | Property                    |
 | -------------- | --------------------------- |
@@ -104,7 +104,7 @@ You can override `scrollSnapStop` in the theme of the Tailwind configuration if 
 
 ## Margin
 
-Utilities for the [`scroll-margin`](https://developer.mozilla.org/fr/docs/Web/CSS/scroll-margin) property.
+Utilities for the [`scroll-margin`](https://developer.mozilla.org/docs/Web/CSS/scroll-margin) property.
 
 <details>
 <summary>See the default list.</summary>
@@ -1186,11 +1186,11 @@ Utilities for the [`scroll-margin`](https://developer.mozilla.org/fr/docs/Web/CS
 
 The default values are inherited from your theme's spacing values, negative values included, just like [`margin`](https://tailwindcss.com/docs/margin).
 
-Also like `margin`, you can override them your Tailwind theme configuration udner the `scrollMargin` key.
+Also like `margin`, you can override them your Tailwind theme configuration under the `scrollMargin` key.
 
 ## Padding
 
-Utilities for the [`scroll-padding`](https://developer.mozilla.org/fr/docs/Web/CSS/scroll-padding) property.
+Utilities for the [`scroll-padding`](https://developer.mozilla.org/docs/Web/CSS/scroll-padding) property.
 
 <details>
 <summary>See the default list.</summary>
@@ -1741,7 +1741,7 @@ Utilities for the [`scroll-padding`](https://developer.mozilla.org/fr/docs/Web/C
 
 The default values are inherited from your theme's spacing values, negative values included, just like [`padding`](https://tailwindcss.com/docs/padding).
 
-Also like `padding`, you can override them your Tailwind theme configuration udner the `scrollPadding` key.
+Also like `padding`, you can override them your Tailwind theme configuration under the `scrollPadding` key.
 
 # Compatibility
 
