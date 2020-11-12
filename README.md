@@ -90,7 +90,7 @@ A configuration for variable-less `scroll-snap-type` utilities could look like t
 }
 ```
 
-It is recommanded that in the case where you need to override the configuration, you only add utilities you plan on actually using.
+It is recommended that in the case where you need to override the configuration, you only add utilities you plan on actually using.
 
 ## Stop
 
@@ -1186,7 +1186,7 @@ Utilities for the [`scroll-margin`](https://developer.mozilla.org/fr/docs/Web/CS
 
 The default values are inherited from your theme's spacing values, negative values included, just like [`margin`](https://tailwindcss.com/docs/margin).
 
-Also like `margin`, you can override them your Tailwind theme configuration udner the `scrollMargin` key.
+Also like `margin`, you can override them your Tailwind theme configuration under the `scrollMargin` key.
 
 ## Padding
 
@@ -1741,7 +1741,7 @@ Utilities for the [`scroll-padding`](https://developer.mozilla.org/fr/docs/Web/C
 
 The default values are inherited from your theme's spacing values, negative values included, just like [`padding`](https://tailwindcss.com/docs/padding).
 
-Also like `padding`, you can override them your Tailwind theme configuration udner the `scrollPadding` key.
+Also like `padding`, you can override them your Tailwind theme configuration under the `scrollPadding` key.
 
 # Compatibility
 
