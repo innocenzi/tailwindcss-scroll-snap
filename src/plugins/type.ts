@@ -11,7 +11,7 @@ export default function (helpers: any) {
 		'scrollSnapType',
 		{
 			'no-snap': 'none',
-			snap: 'var(--scroll-snap-direction) var(--scroll-snap-constraint)',
+			snap: 'var(--scroll-snap-direction, both) var(--scroll-snap-constraint, mandatory)',
 			'snap-x': ['--scroll-snap-direction', 'x'],
 			'snap-y': ['--scroll-snap-direction', 'y'],
 			'snap-both': ['--scroll-snap-direction', 'both'],
