@@ -3,7 +3,7 @@
 }
 
 .snap {
-  scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint)
+  scroll-snap-type: var(--scroll-snap-direction, both) var(--scroll-snap-constraint, mandatory)
 }
 
 .snap-x {
@@ -1758,4 +1758,4 @@
 
 .snap-pl-px {
   scroll-padding-left: 1px
-} 
+}

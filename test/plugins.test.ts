@@ -19,7 +19,7 @@ describe('ScrollSnapType', () => {
 		// @ts-ignore
 		expect(css).toMatchCss(`
       .no-snap { scroll-snap-type: none }
-      .snap { scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint) }
+      .snap { scroll-snap-type: var(--scroll-snap-direction, both) var(--scroll-snap-constraint, mandatory) }
       .snap-x { --scroll-snap-direction: x }
       .snap-y { --scroll-snap-direction: y }
       .snap-both { --scroll-snap-direction: both }
@@ -168,20 +168,20 @@ describe('ScrollMargin', () => {
 
 		// @ts-ignore
 		expect(css).toMatchCss(`
-      .snap-m-tight { scroll-margin: 1rem }  
-      .snap-m-lose { scroll-margin: 2rem }  
-      .snap-my-tight { scroll-margin-top: 1rem; scroll-margin-bottom: 1rem }  
-      .snap-mx-tight { scroll-margin-left: 1rem; scroll-margin-right: 1rem }  
-      .snap-my-lose { scroll-margin-top: 2rem; scroll-margin-bottom: 2rem }  
-      .snap-mx-lose { scroll-margin-left: 2rem; scroll-margin-right: 2rem }  
-      .snap-mt-tight { scroll-margin-top: 1rem }  
-      .snap-mr-tight { scroll-margin-right: 1rem }  
-      .snap-mb-tight { scroll-margin-bottom: 1rem }  
-      .snap-ml-tight { scroll-margin-left: 1rem }  
-      .snap-mt-lose { scroll-margin-top: 2rem }  
-      .snap-mr-lose { scroll-margin-right: 2rem }  
-      .snap-mb-lose { scroll-margin-bottom: 2rem }  
-      .snap-ml-lose { scroll-margin-left: 2rem }    
+      .snap-m-tight { scroll-margin: 1rem }
+      .snap-m-lose { scroll-margin: 2rem }
+      .snap-my-tight { scroll-margin-top: 1rem; scroll-margin-bottom: 1rem }
+      .snap-mx-tight { scroll-margin-left: 1rem; scroll-margin-right: 1rem }
+      .snap-my-lose { scroll-margin-top: 2rem; scroll-margin-bottom: 2rem }
+      .snap-mx-lose { scroll-margin-left: 2rem; scroll-margin-right: 2rem }
+      .snap-mt-tight { scroll-margin-top: 1rem }
+      .snap-mr-tight { scroll-margin-right: 1rem }
+      .snap-mb-tight { scroll-margin-bottom: 1rem }
+      .snap-ml-tight { scroll-margin-left: 1rem }
+      .snap-mt-lose { scroll-margin-top: 2rem }
+      .snap-mr-lose { scroll-margin-right: 2rem }
+      .snap-mb-lose { scroll-margin-bottom: 2rem }
+      .snap-ml-lose { scroll-margin-left: 2rem }
     `);
 	});
 
@@ -236,20 +236,20 @@ describe('ScrollPadding', () => {
 
 		// @ts-ignore
 		expect(css).toMatchCss(`
-      .snap-p-tight { scroll-padding: 1rem }  
-      .snap-p-lose { scroll-padding: 2rem }  
-      .snap-py-tight { scroll-padding-top: 1rem; scroll-padding-bottom: 1rem }  
-      .snap-px-tight { scroll-padding-left: 1rem; scroll-padding-right: 1rem }  
-      .snap-py-lose { scroll-padding-top: 2rem; scroll-padding-bottom: 2rem }  
-      .snap-px-lose { scroll-padding-left: 2rem; scroll-padding-right: 2rem }  
-      .snap-pt-tight { scroll-padding-top: 1rem }  
-      .snap-pr-tight { scroll-padding-right: 1rem }  
-      .snap-pb-tight { scroll-padding-bottom: 1rem }  
-      .snap-pl-tight { scroll-padding-left: 1rem }  
-      .snap-pt-lose { scroll-padding-top: 2rem }  
-      .snap-pr-lose { scroll-padding-right: 2rem }  
-      .snap-pb-lose { scroll-padding-bottom: 2rem }  
-      .snap-pl-lose { scroll-padding-left: 2rem }    
+      .snap-p-tight { scroll-padding: 1rem }
+      .snap-p-lose { scroll-padding: 2rem }
+      .snap-py-tight { scroll-padding-top: 1rem; scroll-padding-bottom: 1rem }
+      .snap-px-tight { scroll-padding-left: 1rem; scroll-padding-right: 1rem }
+      .snap-py-lose { scroll-padding-top: 2rem; scroll-padding-bottom: 2rem }
+      .snap-px-lose { scroll-padding-left: 2rem; scroll-padding-right: 2rem }
+      .snap-pt-tight { scroll-padding-top: 1rem }
+      .snap-pr-tight { scroll-padding-right: 1rem }
+      .snap-pb-tight { scroll-padding-bottom: 1rem }
+      .snap-pl-tight { scroll-padding-left: 1rem }
+      .snap-pt-lose { scroll-padding-top: 2rem }
+      .snap-pr-lose { scroll-padding-right: 2rem }
+      .snap-pb-lose { scroll-padding-bottom: 2rem }
+      .snap-pl-lose { scroll-padding-left: 2rem }
     `);
 	});
 
