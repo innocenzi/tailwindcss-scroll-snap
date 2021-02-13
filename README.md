@@ -60,17 +60,17 @@ You can override `scrollSnapAlign` in the theme of the Tailwind configuration if
 
 Utilities for the [`scroll-snap-type`](https://developer.mozilla.org/docs/Web/CSS/scroll-snap-type) property.
 
-| Class             | Property                                                                        |
-| ----------------- | ------------------------------------------------------------------------------- |
-| `.no-snap`        | `.scroll-snap-type: none;`                                                      |
-| `.snap`           | `.scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint)` |
-| `.snap-x`         | `--scroll-snap-direction: x;`                                                   |
-| `.snap-y`         | `--scroll-snap-direction: y;`                                                   |
-| `.snap-both`      | `--scroll-snap-direction: both;`                                                |
-| `.snap-block`     | `--scroll-snap-direction: block;`                                               |
-| `.snap-inline`    | `--scroll-snap-direction: inline;`                                              |
-| `.snap-mandatory` | `--scroll-snap-constraint: mandatory;`                                          |
-| `.snap-proximity` | `--scroll-snap-constraint: proximity;`                                          |
+| Class             | Property                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------ |
+| `.no-snap`        | `.scroll-snap-type: none;`                                                                       |
+| `.snap`           | `.scroll-snap-type: var(--scroll-snap-direction, both) var(--scroll-snap-constraint, mandatory)` |
+| `.snap-x`         | `--scroll-snap-direction: x;`                                                                    |
+| `.snap-y`         | `--scroll-snap-direction: y;`                                                                    |
+| `.snap-both`      | `--scroll-snap-direction: both;`                                                                 |
+| `.snap-block`     | `--scroll-snap-direction: block;`                                                                |
+| `.snap-inline`    | `--scroll-snap-direction: inline;`                                                               |
+| `.snap-mandatory` | `--scroll-snap-constraint: mandatory;`                                                           |
+| `.snap-proximity` | `--scroll-snap-constraint: proximity;`                                                           |
 
 These utilities work with composition. Except `.no-snap`, you need to combine them. If you're not happy with the way it works, you can override `scrollSnapType` in the theme of the Tailwind configuration.
 
