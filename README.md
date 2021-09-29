@@ -1,4 +1,22 @@
 <p align="center">
+  <h2 align="center">Notice</h2>
+  <p align="center">
+	<b>This plugin is now implemented in Tailwind JIT core and won't be updated anymore.</b>
+  </p>
+</p>
+
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+---
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+<p align="center">
   <h1 align="center">Scroll Snap</h1>
   <p align="center">
     <a href="https://github.com/innocenzi/tailwindcss-scroll-snap/releases">
